@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>easyui用js创建组件</title>
+		<!-- 默认的主题样式 -->
+		<link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css"/>
+		<!-- 图标样式 -->
+		<link rel="stylesheet" type="text/css" href="easyui/themes/icon.css"/>
+		<!-- easyui基于jquery，所以要先导入jquery -->
+		<script src="easyui/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- easy的核心功能js -->
+		<script src="easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入中文包 -->
+		<script src="easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#mydiv").panel({
+					title:'js创建',
+					width:498,
+					height:158
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="mydiv">
+			我是一个组件！！！
+		</div>
+	</body>
+</html>
